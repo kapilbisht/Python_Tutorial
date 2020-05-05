@@ -175,7 +175,8 @@ format_string = "Hello %s %s. Your current balance is $%s."
 
 print(format_string % data)  # Hello John Doe. Your current balance is $53.44.
 
-Basic String Operation
+# Basic String Operation
+
 astring = "Hello World!"
 print(len(astring))  # output 12
 print(astring.index("o"))  # output 4
@@ -348,3 +349,52 @@ name_the_benefits_of_functions()
 
 
 # Classes and Objects
+# Classes are an encapsulation of variables and functions into a single entity.
+# Objects get their variables and functions from classes.
+# Classes are essentially a template to create your objects.
+# A basic example of class
+
+
+class MyClass:
+    variable = "blah"
+    def function(self):
+        print("This is a message inside the class.")
+# to assign the above class(template) to an object we would do the following:
+myobjectx = MyClass()
+# Accessing Object Variables
+print(myobjectx.variable)
+# You can create multiple different objects that are of the same class(have the same variables and functions defined).
+# However, each object contains independent copies of the variables defined in the class.
+myobjecty = MyClass()
+myobjecty.variable = "yackity"
+print(myobjecty.variable)
+# Accessing Object Functions
+myobjectx.function()
+
+# Example
+# define the Vehicle class
+class Vehicle:
+    name = ""
+    kind = "car"
+    color = ""
+    value = 100.00
+    def description(self):
+        desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
+        return desc_str
+
+# your code goes here
+car1 = Vehicle()
+car1.name = "Fer"
+car1.color = "red"
+car1.kind = "convertible"
+car1.value = 60000.00
+
+car2 = Vehicle()
+car2.name = "Jump"
+car2.color = "blue"
+car2.kind = "van"
+car2.value = 10000.00
+
+# test code
+print(car1.description())
+print(car2.description())
