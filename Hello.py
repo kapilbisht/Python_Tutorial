@@ -416,3 +416,21 @@ phonebook = {
 }
 print(phonebook)  # Output - {'John': 12345, 'Jack': 32165, 'Jill': 78945}
 
+# iterating over dictionaries
+# Dictionaries can be iterated over, just like list.
+# However, a dictionary, unlike a list, does not keep the order of the values stored in it.
+
+for name, number in phonebook.items():
+    print("Phone number of %s is %d" %(name, number))
+# output -
+# Phone number of John is 12345
+# Phone number of Jack is 32165
+# Phone number of Jill is 78945
+
+# Removing a value
+# you can one of the following notations to remove a specified index
+del phonebook["John"]
+print(phonebook)  # Output - {'Jack': 32165, 'Jill': 78945}
+# or
+phonebook.pop("Jill")
+print (phonebook)  # Output - {'Jack': 32165}
