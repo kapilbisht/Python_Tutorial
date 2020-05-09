@@ -1,7 +1,7 @@
 print("Code with me!!!")
 print("*" * 10)
 
-price = 100  # variable store the value temporary in memory so that we can use it in our program
+xyz = 100  # variable store the value temporary in memory so that we can use it in our program
 price = 123  # integer value
 ratings: float = 4.5  # floating value
 name: str = "Kapil"  # String value

@@ -1,0 +1,53 @@
+#  Modules And packages
+#  Module is a piece of software that has a specific functionality.
+#  Modules in python simply are the files ending with .py extension.
+#  for ex- we have two files game.py, draw.py
+#  The name of the module will be the name of the file.
+#  A module can have a set of functions, variables and classes defined and implemented.
+#  The Python script game.py will implement the game. It will use the function draw_game
+#  from the file draw.py, or in other words, the draw module,
+#  that implements the logic for drawing the game on the screen.
+#  Modules are imported from other modules using the import command.
+#  below is the sample script-
+#  file name -> game.py
+import draw  # import the draw module
+
+
+def play_game():
+    return "hi"
+
+
+def main():
+    result = play_game()
+    draw.draw_game(result)
+
+# this means that if this script is executed, then
+# main() will be executed
+
+
+if __name__ == '__main__':
+    main()
+
+#  Importing all objects from a module
+#  We can use 'import *' to import all objects from a specific module
+#  Ex-  import the draw module
+from draw import *
+
+
+def play_game():
+    return "hi"
+
+
+def main():
+    result = play_game()
+    draw_game(result)
+
+#  Custom import name
+#  we can import modules under the name we want.
+#  for example-
+import draw as drw
+
+
+def main():
+    drw.draw_game()
+
