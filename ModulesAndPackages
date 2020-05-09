@@ -51,3 +51,18 @@ import draw as drw
 def main():
     drw.draw_game()
 
+
+#  Writing Packages
+#  Packages are simply directories which contain multiple packages and modules themselves.
+#  To make directory Python package it must contain a special file named "__init__.py".
+#  This file can be empty, and it indicates that directory is a Python package,
+#  so it can be imported the same way a module can be imported.
+#  for example, If we create a directory called foo, and it contain a package bar,
+#  then we can import it in following two ways
+import foo.bar
+#  or
+
+form foo import bar
+
+#  In the first method, we must use the foo prefix whenever we access the module bar.
+#  In the second method, we don't, because we import the module to our module's namespace.
