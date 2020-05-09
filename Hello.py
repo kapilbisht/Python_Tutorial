@@ -398,3 +398,21 @@ car2.value = 10000.00
 # test code
 print(car1.description())
 print(car2.description())
+#
+# Dictionaries
+# A dictionary is a data type similar to arrays, but work with keys and values instead of indexes.
+# Each value stored in a dictionary can be accessed using a key,
+# which is any type of object(a string, a number, a list etc.) instead of using its index to address it.
+phonebook = {}
+phonebook["John"] = 12345
+phonebook["Jack"] = 32165
+phonebook["Jill"] = 78945
+print(phonebook)  # Output - {'John': 12345, 'Jack': 32165, 'Jill': 78945}
+# we can also initialize a dictionary in following manner
+phonebook = {
+    "John" : 12345,
+    "Jack" : 32165,
+    "Jill" : 78945
+}
+print(phonebook)  # Output - {'John': 12345, 'Jack': 32165, 'Jill': 78945}
+
